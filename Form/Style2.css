@@ -1,0 +1,202 @@
+@font-face {
+    font-family:BreeSerif;
+    src: url(BreeSerif-Regular.ttf);
+  }
+body{
+
+    font-family:BreeSerif;
+    font-size: 26px;
+}
+
+.container1{
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-direction: column;
+   
+
+}
+.formdiv{
+    padding-top: 20px;
+    background-color: white;
+    overflow: hidden; 
+    width: 100%;
+    
+}
+.inputdiv{
+
+    display: flex;
+    flex-direction: row;
+    background-color:#dfd4ff;
+    padding:20px 50px;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.left{
+    height: 100%;
+    width: 35%;
+    background: url(Pictures/Website-Form.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left:0;
+   
+}
+.right{
+    height: 100%;
+    width: 65%;
+    overflow:hidden;
+    right:0;
+    background-color:white;
+    
+} 
+.form-column{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px;
+
+}
+
+.form-row{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px;
+   
+}
+.form-row label{
+
+text-align: start;
+
+}
+.form-row input{
+
+   outline: none;
+   border-color: silver;
+   border-style: solid;
+    
+    }
+    .form-row .but{
+
+        margin-top: 40px;
+        min-width:max-content;
+        width:8vw;
+        height:4vh;
+        border-radius: 20px;
+        background-color:#8687d7;
+        border-color:#8687d7;
+        border-style: solid;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 25px;
+        letter-spacing: .035em;
+      
+        }
+        
+        .textdiv{
+
+            text-align: left;
+            margin: 10px;
+
+        }
+        .textdiv1{
+
+            text-align: left;
+            font-size: 0.85em;
+            margin: 10px;
+        }
+        
+        a:link {
+            color: #dfd4ff;
+          }
+          
+          /* visited link */
+          a:visited {
+            color: #8687d7;
+          }
+          
+          /* mouse over link */
+          a:hover {
+            color:darkorchid;
+          }
+          
+          /* selected link */
+          a:active {
+            color: #dfd4ff;
+          }
+
+          .logodiv{
+
+            background-color: rgba(0, 0,0, 0.4);
+            position: absolute;
+            width:100%;
+            top: 13%;
+            height:15%;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+          }
+          .logodiv img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+          }
+          .fontviking{
+
+            font-family: Norse;
+            display: inline;
+            font-size: 3em;
+            color: white;
+          }
+          .caption1{
+            width:100%;
+            position: absolute;
+            bottom:0.5%;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 0.5em;
+            color:white;
+          } 
+        
+          input:not(:placeholder-shown):not(:focus):invalid {
+
+           border-color: crimson;
+
+
+          }
+          input:not(:placeholder-shown):not(:focus):valid {
+
+          
+            border-bottom-color: green;
+            border-bottom-width: 3px;
+
+          }
+          input:focus{
+
+              border-color: #8687d7;
+              box-shadow: rgba(166, 43, 214, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          }
+          .alert{
+
+            position:absolute;
+            bottom:3%;
+            width: 100%;
+            margin-right: 10px;
+          }
+          button:focus{border-color:#8687d7; outline:none;}
